@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Screenshot Extension",
+  "version": "1.0",
+  "description": "A Chrome extension for taking screenshots",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "commands": {
+       "take_screenshot": {
+         "suggested_key": {
+           "default": "Ctrl+Shift+S",
+           "mac": "Command+Shift+S"
+         },
+         "description": "Take Screenshot"
+       }
+     },
+     "permissions": [
+       "tabs",
+       "activeTab",
+       "downloads",
+	   "storage"
+     ],
+
+       "background": {
+         "service_worker": "background.js"
+       },
+	   "web_accessible_resources": [
+   {
+     "resources": ["editor.html", "editor.js"],
+     "matches": ["<all_urls>"]
+   }
+ ]
+}
