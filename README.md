@@ -1,4 +1,5 @@
-# Screenshot
+# Screenshot 
+### 和Cursor沟通80次由Cursor生成的浏览器插件代码，功能尚不完善，重在体验AI的强大
 
 一个功能强大的Chrome截图扩展程序，支持截图编辑、裁剪和保存功能。
 
